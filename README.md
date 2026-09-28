@@ -50,8 +50,11 @@ This installs `uv` if needed and runs `uv sync`, which creates the virtual envir
 installs all dependencies (`pydantic`, `flake8`, `mypy`, `accelerate`, `llm_sdk`, ...) as pinned
 in `uv.lock`.
 
-### Running
-
+### Running and Create venv
+```bash
+make env 
+```
+To check the workstation you in, then run: 
 ```bash
 make run
 ```
