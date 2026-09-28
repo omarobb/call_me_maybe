@@ -1,0 +1,14 @@
+[
+    {
+    "name": "Unknown",
+    "description": "Use this function when the user's request does not clearly match any other available function, or is too ambiguous, unclear, or unrelated to call any specific function correctly.",
+    "parameters": {
+      "empty": {
+        "type": "string"
+      }
+    },
+    "returns": {
+      "type": "string"
+    }
+    }
+]

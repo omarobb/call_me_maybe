@@ -1,0 +1,31 @@
+[project]
+name = "call-me-maybe"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "llm_sdk",
+    "argparse>=1.4.0",
+    "flake8>=7.3.0",
+    "mypy>=2.3.1",
+    "pydantic>=2.13.5",
+    "accelerate",
+]
+
+[tool.uv.sources]
+llm_sdk = {path = "./llm_sdk"}
+
+[project.scripts]
+call = "call-me-maybe.src:main"
+
+[tool.uv.build-backend]
+module-name="src"
+module-root=""
+
+[tool.mypy]
+mypy_path = "llm_sdk"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
